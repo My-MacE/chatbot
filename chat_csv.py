@@ -25,7 +25,7 @@ from pandasai.responses.response_parser import ResponseParser
 import pandas as pd
 import koreanize_matplotlib
 
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 def main():
