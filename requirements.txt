@@ -9,3 +9,4 @@ pypdf
 loguru
 docx2txt
 pandasai
+langchain_community
