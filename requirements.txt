@@ -10,3 +10,4 @@ loguru
 docx2txt
 pandasai
 langchain_community
+koreanize_matplotlib
