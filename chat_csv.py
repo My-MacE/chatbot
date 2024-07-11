@@ -28,9 +28,6 @@ import koreanize_matplotlib
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
-OPENAI_API_KEY = st.secrets["openai_api_key"]
-openai_api_key = st.secrets["openai_api_key"]
-
 def main():
     st.set_page_config(
         page_title = "SURVEY GO",
