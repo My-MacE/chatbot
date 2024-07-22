@@ -49,11 +49,11 @@ if 'openai_model' not in st.session_state:
 
 def main():
     st.set_page_config(
-        page_title = "SURVEY GO",
+        page_title = "SK Planet",
         page_icon = "📋"
     )
 
-    st.title(" 📋 SURVEYGO CHATBOT")
+    st.title(" 📋 SK Planet CHATBOT")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
