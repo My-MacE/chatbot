@@ -53,7 +53,7 @@ def main():
         page_icon = "📋"
     )
 
-    st.title(" 📋 SK Planet CHATBOT")
+    st.title(" 📋 SK Planet ChatBot")
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
