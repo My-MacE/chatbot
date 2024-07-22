@@ -105,8 +105,7 @@ def main():
                                                     "response_parser": StreamlitResponse,
                                                     },
                                                     )
-                answer = query_engine.chat(query)
-                st.write(answer)
+                query_engine.chat(query)
 
         elif option == '일반 대화':
             if 'messages' not in st.session_state:
