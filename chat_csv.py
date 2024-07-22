@@ -44,7 +44,7 @@ os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 if 'openai_model' not in st.session_state:
-    st.session_state['openai_model'] = 'gpt-4o'
+    st.session_state['openai_model'] = 'gpt-4o-mini'
 
 
 def main():
@@ -115,7 +115,7 @@ def main():
             client = openai.OpenAI()
 
             if "openai_model" not in st.session_state:
-                st.session_state["openai_model"] = "gpt-4o"
+                st.session_state["openai_model"] = "gpt-4o-mini"
 
             if "messages" not in st.session_state:
                 st.session_state.messages = []
@@ -237,7 +237,7 @@ def get_vectorstore(text_chunks):
     return vectordb
 
 def get_conversation_chain(vetorestore,openai_api_key):
-    llm = ChatOpenAI(openai_api_key=openai_api_key, model_name = 'gpt-4o',temperature=0)
+    llm = ChatOpenAI(openai_api_key=openai_api_key, model_name = 'gpt-4o-mini',temperature=0)
     conversation_chain = ConversationalRetrievalChain.from_llm(
             llm=llm, 
             chain_type="stuff", 
@@ -275,7 +275,7 @@ def create_chain(prompt_type):
         ]
     )
     # GPT
-    llm = ChatOpenAI(model_name="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
     # 출력 파서
     output_parser = StrOutputParser()
