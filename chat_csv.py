@@ -98,7 +98,7 @@ def main():
 
             query = st.text_area("🔎 안녕하세요! 주어진 문서에 대해 궁금하신 것이 있으면 언제든 물어봐주세요! ")
             if query:
-                llm = openaillm(api_token= os.environ["OPENAI_API_KEY"] )
+                llm = openaillm()
                 query_engine = SmartDataframe(df,
                                             config ={
                                                 "llm": llm,
