@@ -11,3 +11,4 @@ docx2txt
 pandasai
 langchain_community
 koreanize_matplotlib
+langchain_openai
