@@ -13,4 +13,3 @@ langchain_community
 koreanize_matplotlib
 langchain_openai
 seaborn
-base64
